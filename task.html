@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+table { width: 50%; margin-bottom: 20px; }
+table, th, td { border:2px solid rgb(148, 13, 13); border-collapse: collapse; padding: 10px; text-align: left; }
+th { background-color: #f1f6f7; }
+input[type="number"] { width: 50%; }
+.total { font-weight: bold; }
+</style>
+</head>
+<body>
+
+<table id="billingTable" >
+<thead>
+<tr>
+<th>Stock Item</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><input type="text" value="Item 1"></td>
+<td><input type="number" value="" step="0"></td>
+<td><input type="number" value="" step="0"></td>
+<td class="subtotal">0.00</td>
+<th><button onclick="addItem()">Add Item</button>
+</th>
+</tr>
+
+</tbody>
+</table>
+
+<p>Total: <span id="total">0.00</span>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
+
